@@ -1642,17 +1642,17 @@ section {
 
 .contact-section .section-badge {
     background: rgba(255, 255, 255, 0.2);
-    color: #1a1a2e;
+    color: #000000;
     font-weight: 700;
 }
 
 .contact-section .section-title {
-    color: #1a1a2e;
+    color: #000000;
     text-shadow: none;
 }
 
 .contact-section .section-description {
-    color: #1a1a2e;
+    color: #000000;
     opacity: 1;
     font-weight: 500;
 }
@@ -1694,19 +1694,19 @@ section {
 
 .contact-details h4 {
     font-weight: 700;
-    color: #1a1a2e;
+    color: #000000;
     margin-bottom: var(--spacing-xs);
     font-size: 1.1rem;
 }
 
 .contact-details p {
-    color: #1a1a2e;
+    color: #000000;
     font-weight: 500;
     opacity: 1;
 }
 
 .contact-details a {
-    color: #003366;
+    color: #000000;
     font-weight: 600;
 }
 
@@ -1724,7 +1724,7 @@ section {
 .form-group label {
     display: block;
     font-weight: 700;
-    color: #003366;
+    color: #000000;
     margin-bottom: var(--spacing-sm);
     font-size: 0.95rem;
 }
@@ -1737,7 +1737,7 @@ section {
     border: 2px solid #e2e8f0;
     border-radius: var(--radius-md);
     font-size: 1rem;
-    color: #1a1a2e;
+    color: #000000;
     background: #ffffff;
     transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
 }
