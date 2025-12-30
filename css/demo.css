@@ -1642,18 +1642,18 @@ section {
 
 .contact-section .section-badge {
     background: rgba(255, 255, 255, 0.2);
-    color: #4ade80;
+    color: #1a1a2e;
     font-weight: 700;
 }
 
 .contact-section .section-title {
-    color: #ffffff;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    color: #1a1a2e;
+    text-shadow: none;
 }
 
 .contact-section .section-description {
-    color: #ffffff;
-    opacity: 0.95;
+    color: #1a1a2e;
+    opacity: 1;
     font-weight: 500;
 }
 
@@ -1694,19 +1694,19 @@ section {
 
 .contact-details h4 {
     font-weight: 700;
-    color: #ffffff;
+    color: #1a1a2e;
     margin-bottom: var(--spacing-xs);
     font-size: 1.1rem;
 }
 
 .contact-details p {
-    color: #ffffff;
+    color: #1a1a2e;
     font-weight: 500;
-    opacity: 0.95;
+    opacity: 1;
 }
 
 .contact-details a {
-    color: #4ade80;
+    color: #003366;
     font-weight: 600;
 }
 
