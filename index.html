@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI-Grade: Yapay Zeka Destekli Akademik Sınav Değerlendirme Platformu">
+    <meta name="author" content="AI-Grade Team - Danışman: Filiz Varol Gürder">
+    <title>AI-Grade | Yapay Zeka Destekli Sınav Değerlendirme</title>
+    <link rel="stylesheet" href="css/demo.css">
+    <!-- Google Fonts - Akademik Görünüm İçin -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-icon">🎓</span>
+                <span class="logo-text">AI-Grade</span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link active">Ana Sayfa</a></li>
+                <li><a href="#features" class="nav-link">Özellikler</a></li>
+                <li><a href="#demo" class="nav-link">Demo</a></li>
+                <li><a href="#how-it-works" class="nav-link">Nasıl Çalışır?</a></li>
+                <li><a href="#about" class="nav-link">Hakkımızda</a></li>
+                <li><a href="#contact" class="nav-link">İletişim</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <header class="hero" id="home">
+        <div class="hero-background">
+            <div class="hero-particles" id="particles"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">🚀 Yeni Nesil Eğitim Teknolojisi</div>
+            <h1 class="hero-title">
+                <span class="gradient-text">Yapay Zeka</span> Destekli
+                <br>Sınav Değerlendirme Platformu
+            </h1>
+            <p class="hero-description">
+                AI-Grade, öğretmenlerin sınav değerlendirme sürecini devrimsel bir şekilde dönüştürür. 
+                <strong>Semantik benzerlik analizi</strong> ile öğrenci cevaplarını ideal cevaplarla karşılaştırır, 
+                anlamsal örtüşmeyi ölçer ve <strong>insanı devre dışı bırakmadan</strong> karar destek aracı olarak çalışır.
+            </p>
+            <div class="hero-cta">
+                <a href="#demo" class="btn btn-primary">
+                    <span>Demo'yu Dene</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="#how-it-works" class="btn btn-secondary">Nasıl Çalışır?</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">%95</span>
+                    <span class="stat-label">Doğruluk Oranı</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">10x</span>
+                    <span class="stat-label">Daha Hızlı</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">∞</span>
+                    <span class="stat-label">Ölçeklenebilir</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>Aşağı Kaydır</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </header>
+
+    <!-- ==================== FEATURES SECTION ==================== -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Özellikler</span>
+                <h2 class="section-title">Neden AI-Grade?</h2>
+                <p class="section-description">
+                    Geleneksel değerlendirme yöntemlerinin ötesine geçin. 
+                    Anlam odaklı, adil ve tutarlı değerlendirme deneyimi yaşayın.
+                </p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🧠</div>
+                    <h3>Semantik Analiz</h3>
+                    <p>Anahtar kelime eşleştirmesi yerine anlamsal benzerlik ölçümü. 
+                       Öğrenci farklı kelimelerle doğru kavramı ifade ettiğinde tanır.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚖️</div>
+                    <h3>Ayarlanabilir Sıkılık</h3>
+                    <p>Cömert modda kavramsal anlama, katı modda olgusal doğruluk önceliklenir. 
+                       Her sınav için özelleştirilebilir.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Hassas İşaretleme</h3>
+                    <p>Her cümle benzersiz ID ile tokenize edilir. Eşleşen ve eşleşmeyen bölümler 
+                       renklerle görsel olarak işaretlenir.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👨‍🏫</div>
+                    <h3>İnsan Kontrolü</h3>
+                    <p>AI karar vermez, öneri sunar. Son karar her zaman öğretmendedir. 
+                       Gerçek bir karar destek sistemi.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Detaylı Metrikler</h3>
+                    <p>Semantik eşleşme, olgusal doğruluk ve yapısal bütünlük puanları 
+                       ayrı ayrı görselleştirilir.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💬</div>
+                    <h3>AI Yorumları</h3>
+                    <p>Her değerlendirme için detaylı açıklama. Neden o puanı aldığını 
+                       öğrenci ve öğretmen net olarak anlar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== HOW IT WORKS SECTION ==================== -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Süreç</span>
+                <h2 class="section-title">Nasıl Çalışır?</h2>
+                <p class="section-description">
+                    4 basit adımda sınav değerlendirme sürecinizi dönüştürün
+                </p>
+            </div>
+            <div class="steps-container">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>İdeal Cevabı Yükle</h3>
+                        <p>Öğretmen, sorunun doğru/ideal cevabını sisteme girer. 
+                           Bu, değerlendirmenin temel referans noktasıdır.</p>
+                        <div class="step-example">
+                            <strong>Örnek:</strong> "Sanayi Devrimi, 18. yüzyılda İngiltere'de başlamış, 
+                            James Watt'ın buhar makinesini geliştirmesiyle hız kazanmıştır..."
+                        </div>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>Öğrenci Kağıdını Yükle</h3>
+                        <p>Değerlendirilecek öğrenci cevabı sisteme girilir. 
+                           Her cümle otomatik olarak tokenize edilir.</p>
+                        <div class="step-example">
+                            <strong>Örnek:</strong> "Sanayi Devrimi büyük bir teknolojik değişimdir. 
+                            Einstein 1905'te buhar makinesini icat etti..."
+                        </div>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>Sıkılık & Özel Notlar</h3>
+                        <p>Değerlendirme hassasiyetini ayarlayın ve AI'ın dikkat etmesi gereken 
+                           kritik noktaları belirtin.</p>
+                        <div class="step-example">
+                            <strong>Örnek Not:</strong> "Buhar makinesinin mucidini doğru yazması 
+                            çok önemlidir. Bu detay yanlışsa puan düşürülmelidir."
+                        </div>
+                    </div>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">04</div>
+                    <div class="step-content">
+                        <h3>Analiz Et & Gözden Geçir</h3>
+                        <p>AI analizi tamamlar, benzerlik oranını hesaplar ve 
+                           eşleşen/eşleşmeyen bölümleri işaretler. Son karar sizin!</p>
+                        <div class="step-example">
+                            <strong>Çıktı:</strong> Semantik Eşleşme: %78 | Olgusal Doğruluk: %45 | 
+                            Yapısal Bütünlük: %82
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== DEMO SECTION ==================== -->
+    <section class="demo-section" id="demo">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Canlı Demo</span>
+                <h2 class="section-title">AI-Grade'i Deneyin</h2>
+                <p class="section-description">
+                    Aşağıdaki demo ile sistemin nasıl çalıştığını canlı olarak görün
+                </p>
+            </div>
+
+            <!-- Upload Section -->
+            <div class="upload-section" id="upload-section">
+                <div class="upload-grid">
+                    <!-- Ideal Answer Upload -->
+                    <div class="upload-card" id="ideal-answer-card">
+                        <div class="upload-header">
+                            <div class="upload-icon">📝</div>
+                            <h3>İdeal Cevap (Öğretmen)</h3>
+                        </div>
+                        <div class="upload-body">
+                            <textarea 
+                                id="ideal-answer" 
+                                class="upload-textarea" 
+                                placeholder="Sorunun doğru/ideal cevabını buraya yazın...
+
+Örnek: Sanayi Devrimi, 18. yüzyılın sonlarında İngiltere'de başlayan ve dünyayı derinden etkileyen büyük bir ekonomik ve teknolojik dönüşümdür. James Watt'ın buhar makinesini geliştirmesi, bu devrimin en önemli kilometre taşlarından biridir. Buhar gücü sayesinde fabrikalar kurulmuş, üretim el işçiliğinden makine üretimine geçmiştir. Bu süreç, toplumsal yapıyı, şehirleşmeyi ve işçi sınıfının oluşumunu derinden etkilemiştir."></textarea>
+                            <div class="char-counter">
+                                <span id="ideal-char-count">0</span> karakter
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Student Answer Upload -->
+                    <div class="upload-card" id="student-answer-card">
+                        <div class="upload-header">
+                            <div class="upload-icon">🎓</div>
+                            <h3>Öğrenci Cevabı</h3>
+                        </div>
+                        <div class="upload-body">
+                            <textarea 
+                                id="student-answer" 
+                                class="upload-textarea" 
+                                placeholder="Değerlendirilecek öğrenci cevabını buraya yazın...
+
+Örnek: Sanayi Devrimi çok büyük bir teknolojik değişimdir ve dünyayı değiştirmiştir. Einstein 1905 yılında buhar makinesini icat etmiş ve bu sayede fabrikalar açılmıştır. İnsanlar köylerden şehirlere taşınmış, işçi sınıfı ortaya çıkmıştır. Makineler sayesinde üretim hızlanmış ve ekonomi büyümüştür."></textarea>
+                            <div class="char-counter">
+                                <span id="student-char-count">0</span> karakter
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Settings Panel -->
+                <div class="settings-panel">
+                    <div class="settings-grid">
+                        <!-- Strictness Slider -->
+                        <div class="setting-item">
+                            <div class="setting-header">
+                                <label for="strictness-slider">Değerlendirme Sıkılığı</label>
+                                <span class="setting-value" id="strictness-value">50</span>
+                            </div>
+                            <div class="slider-container">
+                                <span class="slider-label">Cömert</span>
+                                <input 
+                                    type="range" 
+                                    id="strictness-slider" 
+                                    min="0" 
+                                    max="100" 
+                                    value="50" 
+                                    class="strictness-slider">
+                                <span class="slider-label">Katı</span>
+                            </div>
+                            <p class="setting-description">
+                                <strong>Cömert (0-40):</strong> Anlamsal yakınlık öncelikli, küçük hatalar toleranslı<br>
+                                <strong>Dengeli (40-60):</strong> Hem anlam hem doğruluk eşit ağırlıklı<br>
+                                <strong>Katı (60-100):</strong> Olgusal doğruluk kritik, hatalar ağır cezalı
+                            </p>
+                        </div>
+
+                        <!-- Special Instructions -->
+                        <div class="setting-item">
+                            <div class="setting-header">
+                                <label for="special-instructions">AI İçin Özel Notlar</label>
+                            </div>
+                            <textarea 
+                                id="special-instructions" 
+                                class="instructions-textarea"
+                                placeholder="AI'ın dikkat etmesi gereken özel durumları buraya yazın...
+
+Örnek: 'Buhar makinesinin mucidinin doğru yazılması çok önemlidir. Öğrenci James Watt ismini doğru yazdıysa tam puan almalıdır. Tarih hatası küçük bir eksikliktir. Sanayi Devrimi'nin toplumsal etkilerinden bahsedilmesi bonus puan getirebilir.'"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Analyze Button -->
+                    <div class="analyze-button-container">
+                        <button class="btn btn-analyze" id="analyze-btn">
+                            <span class="btn-icon">🔍</span>
+                            <span class="btn-text">Analizi Başlat</span>
+                            <span class="btn-loading">
+                                <span class="spinner"></span>
+                                Analiz Ediliyor...
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Analysis Workspace (Hidden until analysis starts) -->
+            <div class="workspace" id="workspace" style="display: none;">
+                <!-- Terminal Window -->
+                <div class="terminal-window" id="terminal">
+                    <div class="terminal-header">
+                        <div class="terminal-buttons">
+                            <span class="terminal-btn red"></span>
+                            <span class="terminal-btn yellow"></span>
+                            <span class="terminal-btn green"></span>
+                        </div>
+                        <span class="terminal-title">AI-Grade Analysis Console</span>
+                    </div>
+                    <div class="terminal-body" id="terminal-body">
+                        <div class="terminal-line">
+                            <span class="terminal-prompt">$</span>
+                            <span class="terminal-text">Initializing AI-Grade Engine v2.0...</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Split Screen Workspace -->
+                <div class="split-workspace">
+                    <!-- Left Panel: Student Paper -->
+                    <div class="panel paper-panel" id="paper-panel">
+                        <div class="panel-header">
+                            <h3>📄 Öğrenci Kağıdı</h3>
+                            <div class="scanning-indicator" id="scanning-indicator">
+                                <span class="scanning-dot"></span>
+                                <span>AI Tarama</span>
+                            </div>
+                        </div>
+                        <div class="paper-container" id="paper-container">
+                            <div class="paper" id="student-paper">
+                                <!-- Tokenized content will be rendered here -->
+                                <div class="paper-header">
+                                    <div class="paper-logo">📚</div>
+                                    <div class="paper-title">Öğrenci Sınav Kağıdı</div>
+                                    <div class="paper-date">Tarih: 30 Aralık 2025</div>
+                                </div>
+                                <div class="paper-content" id="paper-content">
+                                    <!-- Sentences will be rendered here -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Panel: AI Dashboard -->
+                    <div class="panel dashboard-panel" id="dashboard-panel">
+                        <div class="panel-header">
+                            <h3>🤖 AI Analiz Sonuçları</h3>
+                        </div>
+                        <div class="dashboard-content">
+                            <!-- Score Card -->
+                            <div class="result-card score-card" id="score-card">
+                                <div class="score-display">
+                                    <div class="score-circle" id="score-circle">
+                                        <svg viewBox="0 0 100 100">
+                                            <circle class="score-bg" cx="50" cy="50" r="45"/>
+                                            <circle class="score-progress" cx="50" cy="50" r="45" id="score-progress"/>
+                                        </svg>
+                                        <div class="score-value" id="score-value">--</div>
+                                    </div>
+                                    <div class="score-label">Genel Puan</div>
+                                </div>
+                                <div class="score-breakdown">
+                                    <div class="mode-badge" id="mode-badge">Dengeli Mod</div>
+                                </div>
+                            </div>
+
+                            <!-- Metrics -->
+                            <div class="metrics-card" id="metrics-card">
+                                <h4>Detaylı Metrikler</h4>
+                                <div class="metric-item">
+                                    <div class="metric-header">
+                                        <span class="metric-icon">🧠</span>
+                                        <span class="metric-name">Semantik Eşleşme</span>
+                                        <span class="metric-value" id="semantic-value">--%</span>
+                                    </div>
+                                    <div class="metric-bar">
+                                        <div class="metric-progress" id="semantic-progress"></div>
+                                    </div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-header">
+                                        <span class="metric-icon">✓</span>
+                                        <span class="metric-name">Olgusal Doğruluk</span>
+                                        <span class="metric-value" id="factual-value">--%</span>
+                                    </div>
+                                    <div class="metric-bar">
+                                        <div class="metric-progress factual" id="factual-progress"></div>
+                                    </div>
+                                </div>
+                                <div class="metric-item">
+                                    <div class="metric-header">
+                                        <span class="metric-icon">📐</span>
+                                        <span class="metric-name">Yapısal Bütünlük</span>
+                                        <span class="metric-value" id="structural-value">--%</span>
+                                    </div>
+                                    <div class="metric-bar">
+                                        <div class="metric-progress structural" id="structural-progress"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- AI Commentary -->
+                            <div class="commentary-card" id="commentary-card">
+                                <h4>🤖 AI Değerlendirme Yorumu</h4>
+                                <div class="commentary-content" id="commentary-content">
+                                    <p class="placeholder-text">Analiz tamamlandığında AI yorumu burada görünecek...</p>
+                                </div>
+                            </div>
+
+                            <!-- Sentence Analysis -->
+                            <div class="sentence-analysis-card" id="sentence-analysis-card">
+                                <h4>📝 Cümle Bazlı Analiz</h4>
+                                <div class="sentence-list" id="sentence-list">
+                                    <!-- Sentence items will be rendered here -->
+                                </div>
+                            </div>
+
+                            <!-- Actions -->
+                            <div class="action-buttons">
+                                <button class="btn btn-secondary" id="reset-btn">
+                                    <span>↺</span> Yeni Analiz
+                                </button>
+                                <button class="btn btn-primary" id="export-btn">
+                                    <span>📥</span> Raporu İndir
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Hakkımızda</span>
+                <h2 class="section-title">AI-Grade Ekibi</h2>
+                <p class="section-description">
+                    Eğitim teknolojilerini dönüştürmeye adanmış bir ekip
+                </p>
+            </div>
+            <div class="about-content">
+                <div class="about-story">
+                    <h3>Hikayemiz</h3>
+                    <p>
+                        AI-Grade, geleneksel sınav değerlendirme süreçlerinin zorluklarından doğmuştur. 
+                        Öğretmenlerin yüzlerce kağıdı değerlendirirken karşılaştığı yorgunluk, tutarsızlık 
+                        ve zaman kaybı sorunlarına çözüm üretmek amacıyla geliştirilmiştir.
+                    </p>
+                    <p>
+                        Temel felsefemiz basittir: <strong>AI, öğretmenin yerini almaz, ona yardımcı olur.</strong> 
+                        Sistemimiz bir "Karar Destek Aracı" olarak tasarlanmıştır. Öğrenci cevabını ideal cevapla 
+                        karşılaştırır, semantik benzerliği ölçer ve detaylı bir analiz sunar. Ancak son karar 
+                        her zaman eğitimcidedir.
+                    </p>
+                    <p>
+                        Bu proje, <strong>Bilgisayar Mühendisliği</strong> eğitim müfredatının bir parçası olarak, 
+                        modern web teknolojileri ve yapay zeka uygulamaları alanında öğrencilere pratik deneyim 
+                        kazandırmak amacıyla geliştirilmiştir.
+                    </p>
+                </div>
+                <div class="about-advisor">
+                    <div class="advisor-card">
+                        <div class="advisor-avatar">👩‍🏫</div>
+                        <h4>Proje Danışmanı</h4>
+                        <h3 class="advisor-name">Filiz Varol Gürder</h3>
+                        <p class="advisor-title">Öğretim Üyesi</p>
+                        <p class="advisor-description">
+                            Bu projenin akademik danışmanlığını üstlenen değerli hocamız, 
+                            eğitim teknolojileri ve yapay zeka uygulamaları konusundaki 
+                            vizyoner yaklaşımıyla projeye yön vermiştir. Kendisine 
+                            rehberliği ve desteği için teşekkür ederiz.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="tech-stack">
+                <h3>Kullanılan Teknolojiler</h3>
+                <div class="tech-grid">
+                    <div class="tech-item">
+                        <span class="tech-icon">📄</span>
+                        <span class="tech-name">HTML5</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">🎨</span>
+                        <span class="tech-name">CSS3</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">⚡</span>
+                        <span class="tech-name">JavaScript ES6+</span>
+                    </div>
+                    <div class="tech-item">
+                        <span class="tech-icon">🌐</span>
+                        <span class="tech-name">GitHub Pages</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">İletişim</span>
+                <h2 class="section-title">Bizimle İletişime Geçin</h2>
+                <p class="section-description">
+                    Sorularınız, önerileriniz veya işbirliği talepleriniz için bize ulaşın
+                </p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h4>E-posta</h4>
+                            <p>info@ai-grade.edu</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h4>Adres</h4>
+                            <p>Bilgisayar Mühendisliği Bölümü<br>Üniversite Kampüsü</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🔗</div>
+                        <div class="contact-details">
+                            <h4>GitHub</h4>
+                            <p><a href="https://github.com/ai-exam-scanner" target="_blank">github.com/ai-exam-scanner</a></p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="contact-name">Adınız Soyadınız</label>
+                        <input type="text" id="contact-name" placeholder="Adınızı girin" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-email">E-posta Adresiniz</label>
+                        <input type="email" id="contact-email" placeholder="E-posta adresinizi girin" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-subject">Konu</label>
+                        <select id="contact-subject" required>
+                            <option value="">Konu seçin</option>
+                            <option value="general">Genel Soru</option>
+                            <option value="technical">Teknik Destek</option>
+                            <option value="collaboration">İşbirliği Teklifi</option>
+                            <option value="feedback">Geri Bildirim</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="contact-message">Mesajınız</label>
+                        <textarea id="contact-message" rows="5" placeholder="Mesajınızı yazın" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span>📤</span> Mesajı Gönder
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <span class="logo-icon">🎓</span>
+                        <span class="logo-text">AI-Grade</span>
+                    </div>
+                    <p>Yapay Zeka Destekli Akademik Sınav Değerlendirme Platformu</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Navigasyon</h4>
+                        <ul>
+                            <li><a href="#home">Ana Sayfa</a></li>
+                            <li><a href="#features">Özellikler</a></li>
+                            <li><a href="#demo">Demo</a></li>
+                            <li><a href="#how-it-works">Nasıl Çalışır?</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Proje</h4>
+                        <ul>
+                            <li><a href="#about">Hakkımızda</a></li>
+                            <li><a href="#contact">İletişim</a></li>
+                            <li><a href="https://github.com/ai-exam-scanner" target="_blank">GitHub</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AI-Grade. Tüm hakları saklıdır.</p>
+                <p>Danışman: <strong>Filiz Varol Gürder</strong></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/demo.js"></script>
+</body>
+</html>
