@@ -451,8 +451,9 @@
                     Eğitim teknolojilerini dönüştürmeye adanmış bir ekip
                 </p>
             </div>
-            <div class="about-content">
-                <div class="about-story">
+            <!-- Hikayemiz -->
+            <div class="about-story-section">
+                <div class="story-content">
                     <h3>Hikayemiz</h3>
                     <p>
                         AI-Grade, geleneksel sınav değerlendirme süreçlerinin zorluklarından doğmuştur. 
@@ -469,43 +470,97 @@
                         Bu proje, <strong>Marmara Üniversitesi Yönetim Bilişim Sistemleri</strong> bölümü 
                         3. sınıf öğrencileri tarafından geliştirilmiştir.
                     </p>
-                    <div class="team-section">
-                        <h4>Proje Ekibi</h4>
-                        <ul class="team-list">
-                            <li>Yunus Emre Susuz</li>
-                            <li>Faruk Yürükoğulları</li>
-                            <li>Şevval Hafa</li>
-                            <li>Tolga Cambal</li>
-                        </ul>
-                    </div>
                 </div>
-                <div class="about-advisor">
-                    <div class="advisor-card">
-                        <div class="advisor-avatar"><svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="32" cy="32" r="30" stroke="white" stroke-width="2" fill="rgba(255,255,255,0.1)"/><circle cx="32" cy="24" r="10" stroke="white" stroke-width="2"/><path d="M12 52c0-8 8-14 20-14s20 6 20 14" stroke="white" stroke-width="2"/></svg></div>
-                        <h4>Proje Danışmanı</h4>
-                        <h3 class="advisor-name">Filiz Varol Gürder</h3>
-                        <p class="advisor-title">Öğretim Üyesi</p>
+            </div>
+
+            <!-- Proje Ekibi -->
+            <div class="team-members-section">
+                <h3 class="team-title">Proje Ekibi</h3>
+                <div class="team-grid">
+                    <!-- Yunus Emre Susuz -->
+                    <div class="team-card">
+                        <div class="team-photo">
+                            <img src="images/team/yunus.jpg" alt="Yunus Emre Susuz" onerror="this.style.display='none'; this.parentElement.classList.add('no-photo');">
+                            <div class="photo-placeholder">
+                                <svg width="48" height="48" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="32" cy="24" r="12" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M10 56c0-10 10-18 22-18s22 8 22 18" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <h4 class="team-name">Yunus Emre Susuz</h4>
+                            <p class="team-role">Teknoloji İmplementasyonu & Yazılım Geliştirme</p>
+                        </div>
+                    </div>
+
+                    <!-- Şevval Hafa -->
+                    <div class="team-card">
+                        <div class="team-photo">
+                            <img src="images/team/sevval.jpg" alt="Şevval Hafa" onerror="this.style.display='none'; this.parentElement.classList.add('no-photo');">
+                            <div class="photo-placeholder">
+                                <svg width="48" height="48" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="32" cy="24" r="12" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M10 56c0-10 10-18 22-18s22 8 22 18" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <h4 class="team-name">Şevval Hafa</h4>
+                            <p class="team-role">İş Modeli & Tasarım</p>
+                        </div>
+                    </div>
+
+                    <!-- Tolga Cambal -->
+                    <div class="team-card">
+                        <div class="team-photo">
+                            <img src="images/team/tolga.jpg" alt="Tolga Cambal" onerror="this.style.display='none'; this.parentElement.classList.add('no-photo');">
+                            <div class="photo-placeholder">
+                                <svg width="48" height="48" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="32" cy="24" r="12" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M10 56c0-10 10-18 22-18s22 8 22 18" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <h4 class="team-name">Tolga Cambal</h4>
+                            <p class="team-role">Pazarlama Sorumlusu</p>
+                        </div>
+                    </div>
+
+                    <!-- Hüseyin Faruk Yürükoğulları -->
+                    <div class="team-card">
+                        <div class="team-photo">
+                            <img src="images/team/faruk.jpg" alt="Hüseyin Faruk Yürükoğulları" onerror="this.style.display='none'; this.parentElement.classList.add('no-photo');">
+                            <div class="photo-placeholder">
+                                <svg width="48" height="48" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="32" cy="24" r="12" stroke="currentColor" stroke-width="2"/>
+                                    <path d="M10 56c0-10 10-18 22-18s22 8 22 18" stroke="currentColor" stroke-width="2"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <h4 class="team-name">Hüseyin Faruk Yürükoğulları</h4>
+                            <p class="team-role">Etik, Hukuk & Resmi Mevzuatlar</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="tech-stack">
-                <h3>Kullanılan Teknolojiler</h3>
-                <div class="tech-grid">
-                    <div class="tech-item">
-                        <span class="tech-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="#e34c26"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.23-2.622L5.412 4.41l.698 8.01h9.126l-.326 3.426-2.91.804-2.955-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/></svg></span>
-                        <span class="tech-name">HTML5</span>
+
+            <!-- Danışman -->
+            <div class="advisor-section">
+                <div class="advisor-card">
+                    <div class="advisor-avatar">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="32" cy="32" r="30" stroke="white" stroke-width="2" fill="rgba(255,255,255,0.1)"/>
+                            <circle cx="32" cy="24" r="10" stroke="white" stroke-width="2"/>
+                            <path d="M12 52c0-8 8-14 20-14s20 6 20 14" stroke="white" stroke-width="2"/>
+                        </svg>
                     </div>
-                    <div class="tech-item">
-                        <span class="tech-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="#264de4"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11H6.248l.33 4.171L12 19.351l5.379-1.443.744-8.157H8.531z"/></svg></span>
-                        <span class="tech-name">CSS3</span>
-                    </div>
-                    <div class="tech-item">
-                        <span class="tech-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="#f7df1e"><path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.404-.601-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.291-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/></svg></span>
-                        <span class="tech-name">JavaScript ES6+</span>
-                    </div>
-                    <div class="tech-item">
-                        <span class="tech-icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="#333"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></span>
-                        <span class="tech-name">GitHub Pages</span>
+                    <div class="advisor-info">
+                        <span class="advisor-label">Proje Danışmanı</span>
+                        <h3 class="advisor-name">Filiz Varol Gürder</h3>
+                        <p class="advisor-title">Öğretim Üyesi</p>
                     </div>
                 </div>
             </div>
