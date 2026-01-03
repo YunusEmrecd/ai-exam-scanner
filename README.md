@@ -1,10 +1,10 @@
-# AI-Grade
+# BilgeGrade
 
 Yapay Zeka Destekli Akademik Sınav Değerlendirme Platformu
 
 ## Proje Hakkında
 
-AI-Grade, geleneksel sınav değerlendirme sürecini devrimsel bir şekilde dönüştüren bir platformdur. Sistem, öğretmenlerin sınav değerlendirme sürecinde bir **Karar Destek Aracı** olarak çalışır ve semantik benzerlik analizi ile öğrenci cevaplarını ideal cevaplarla karşılaştırır.
+BilgeGrade, geleneksel sınav değerlendirme sürecini devrimsel bir şekilde dönüştüren bir platformdur. Sistem, öğretmenlerin sınav değerlendirme sürecinde bir **Karar Destek Aracı** olarak çalışır ve semantik benzerlik analizi ile öğrenci cevaplarını ideal cevaplarla karşılaştırır.
 
 ### Temel Felsefe
 - **AI öğretmenin yerini almaz** - Ona yardımcı olur
@@ -66,11 +66,11 @@ ai-exam-scanner/
 
 ## Demo
 
-[AI-Grade Demo](https://yunusemrecd.github.io/ai-exam-scanner/)
+[BilgeGrade Demo](https://yunusemrecd.github.io/ai-exam-scanner/)
 
 ## Lisans
 
-© 2025 AI-Grade. Tüm hakları saklıdır.
+© 2025 BilgeGrade. Tüm hakları saklıdır.
 
 ---
 

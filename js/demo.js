@@ -1,11 +1,11 @@
 /**
- * AI-Grade - Yapay Zeka Destekli Sınav Değerlendirme Platformu
+ * BilgeGrade - Yapay Zeka Destekli Sınav Değerlendirme Platformu
  * 
  * Ana JavaScript Dosyası
  * Simüle edilmiş AI değerlendirme motorunu, tokenize içerik oluşturma,
  * asenkron işlem akışı ve UI güncellemelerini içerir.
  * 
- * @author AI-Grade Team
+ * @author BilgeGrade Team
  * @advisor Filiz Varol Gürder
  * @version 2.0
  */
@@ -67,7 +67,7 @@ class GradingEngine {
         
         // Terminal log mesajları (gerçekçi AI işlem simülasyonu)
         this.terminalLogs = [
-            { text: 'Initializing AI-Grade Engine v2.0...', delay: 300, type: 'info' },
+            { text: 'Initializing BilgeGrade Engine v2.0...', delay: 300, type: 'info' },
             { text: 'Loading NLP Models...', delay: 400, type: 'default' },
             { text: '├── BERT Transformer Model: OK', delay: 200, type: 'success' },
             { text: '├── Semantic Similarity Module: OK', delay: 200, type: 'success' },
@@ -952,7 +952,7 @@ class UIController {
         // Basit metin raporu oluştur
         let report = `
 ========================================
-        AI-GRADE DEĞERLENDIRME RAPORU
+        BilgeGrade DEĞERLENDIRME RAPORU
 ========================================
 
 Tarih: ${new Date().toLocaleDateString('tr-TR')}
@@ -998,7 +998,7 @@ ${commentary}
         report += `
 ========================================
    Danışman: Filiz Varol Gürder
-   © 2025 AI-Grade
+   © 2025 BilgeGrade
 ========================================
 `;
         
@@ -1007,7 +1007,7 @@ ${commentary}
         const url = URL.createObjectURL(blob);
         const a = document.createElement('a');
         a.href = url;
-        a.download = `AI-Grade_Rapor_${new Date().toISOString().split('T')[0]}.txt`;
+        a.download = `BilgeGrade_Rapor_${new Date().toISOString().split('T')[0]}.txt`;
         document.body.appendChild(a);
         a.click();
         document.body.removeChild(a);
@@ -1068,7 +1068,7 @@ class ParticleAnimation {
  * Sayfa yüklendiğinde uygulamayı başlat
  */
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('🎓 AI-Grade v2.0 başlatılıyor...');
+    console.log('🎓 BilgeGrade v2.0 başlatılıyor...');
     console.log('📚 Danışman: Filiz Varol Gürder');
     
     // Grading Engine'i oluştur
@@ -1091,7 +1091,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
     
-    console.log('✅ AI-Grade başarıyla yüklendi!');
+    console.log('✅ BilgeGrade başarıyla yüklendi!');
 });
 
 // ==================== EXPORT FOR DEBUGGING ====================
